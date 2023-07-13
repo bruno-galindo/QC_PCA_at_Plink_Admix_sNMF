@@ -219,7 +219,7 @@ plink --bfile final_output3 --cow --recode --allow-no-sex --out genofile2
 note that you are using as imput your file after quality control and individual removing.
 
 - Now on R, using the package LEA you can convert the *.ped* file (created in the step above named "genofile2") to *.geno* file using the command below 
-```{r}
+```{r eval=FALSE}
 output = ped2geno("genofile2.ped", "genofile3.geno")
 ```
 The command above will create the file "genofile3.geno" and disclose the above message with the number of individuals and loci.
@@ -247,7 +247,13 @@ project = snmf("genofile3.geno",
 
 7.4 To find the most likely K value, you should Plotting cross-entropy criterion of all runs of the project. To make this run the code below:
 ```{r echo=FALSE}
+#Use this option if your global environment file isn't stored in your local page
 load("C:/Users/galin/OneDrive - University of Guelph/TrainingGenomic/TutorialAdmixtureAtPlink/GlobalEnvAdmix.RData")
+```
+
+```{r echo=FALSE}
+#use this option if your global environment file is in your local page (work directory)
+load("GlobalEnvAdmix.RData")
 ```
 
 ```{r}
