@@ -2,7 +2,7 @@
 title: "QC_PCA_Admixture"
 author: "BrunoGalindo"
 date: "2023-07-13"
-output: html_document
+output: github_document
 ---
 
 # Plink 1.9
